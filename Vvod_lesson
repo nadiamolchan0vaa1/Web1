@@ -1,0 +1,7 @@
+git init --initial-branch=main
+git config --local user.name "Ваше имя"
+git config --local user.email "Ваш имейл на GitHub"
+git add index.html
+git commit -m "Текст вашего коммита"
+git remote add origin ссылка_с_github
+git push origin main
