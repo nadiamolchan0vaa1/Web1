@@ -2,24 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+		/>
+		<link rel="stylesheet" href="styles/styles.css" />
     <title>Моя страница</title>
 </head>
 <body>
     <header>
-        <h1>Заголовок страницы</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Ссылка 1</a></li>
-                <li><a href="#">Ссылка 2</a></li>
-                <li><a href="#">Ссылка 3</a></li>
+        <nav class="top-menu">
+            <a class="logo-main" href=""><img src="images/mail-1.png"></a>
+            
+            <ul class="menu-main">
+              
+              <li><a href="">FEATURES</a></li>
+              <li><a href="">PRICING</a></li>
+              <li><a href="">SERVICES</a></li>
+              <li><a href="">PARTNERS</a></li>
+              <li><a href="">SIGN UP FREE</a></li>
             </ul>
-        </nav>
+          </nav>
     </header>
 
     <main>
-        <h2>Заголовок основного содержимого</h2>
-        <p>Это основной текст на странице.</p>
-        <img src="путь_к_изображению" alt="Описание изображения">
+      <h2>Заголовок основного содержимого</h2>
+      <div class="main_div">
+        <img class="style_absolute" src="images/photo hero@2x.jpg" alt="Описание изображения"  >
+        <div class="style_div">
+          <p class="style1">Create Stunning</p>
+          <p class="style1">Email Campaigns</p>
+          <p class="style2">
+            Create and launch email campaigns that captivate
+    your customers in just a few clicks.
+          </p>
+          <button class="green-button">TRY NOW</button>
+          <a href="#" class="this-button">Нажми меня</a>
+        </div>
+      </div>
+      <img class="m_video" src="images/VIDEO (image).png" alt="Город не спит" >
     </main>
 
     <footer>
