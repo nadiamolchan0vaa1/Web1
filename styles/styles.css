@@ -35,18 +35,28 @@ body{
 
 .style_div{
   position: relative;
+  width: 489px;
+  height: 317px;
+  top: 22px;
 }
 .main_div{
   width: 1088px;
   height: 383px;
   position: right;
-  margin-left: 205px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: url('../images/photohero@2x.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
 }
 .style1{
   font-weight: 900;
   font-size: 59px;
   line-height: 120%;
   color: #000;
+  margin: 0;
 
   
 }
@@ -102,8 +112,7 @@ body{
 .m_video{
   width: 944px;
   height: 531px;
-  float: center;
-  bottom: 408px;
-  margin-left: 248px;
   margin-top: 209px;
+  margin-left: auto;
+  margin-right: auto;
 }
