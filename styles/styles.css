@@ -1,14 +1,8 @@
 body{
-    background-color: #FFFFFF;
+  background-color: #FFFFFF;
 }
- h1{
-    background-color: rgb(184, 94, 123); 
-  text-align:  center;
- }
- h2{
-  margin-right: 20px;
- }
- .top-menu {
+
+.top-menu {
   padding: 20px;
 }
 
