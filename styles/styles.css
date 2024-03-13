@@ -1,3 +1,8 @@
+:root {
+  --font-family: "Raleway", sans-serif;
+  --second-family: "Playfair Display", sans-serif;
+  --color: #000;
+}
 body{
   background-color: #FFFFFF;
 }
@@ -59,7 +64,7 @@ body{
   font-weight: 500;
   font-size: 19px;
   line-height: 137%;
-  color: #000;
+  color: var(--color);
   
 }
 .style_absolute{
@@ -78,7 +83,7 @@ body{
   width: 200px;
   height: 65px;
   border: none;
-
+  float: left;
   width: 200px;
   height: 65px;
   font-family: var(--font-family);
@@ -89,19 +94,23 @@ body{
   text-align: center;
 }
 .this-button {
-  background-color: #FFFFFF; 
-  color: #4ba87d;
-  text-decoration: none; 
-  border: 3px solid #4ba87d;
+  border: 4px solid #4ba87d;
   width: 200px;
   height: 65px;
+  float: right;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 250%;
+  font-size: 21px;
   font-family: var(--font-family);
   font-weight: 900;
-  font-size: 21px;
-  line-height: 119%;
-  letter-spacing: 0.1em;
-  text-align: center;
-  margin-left: 89px;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+.button_style{
+  color: #4ba87d;
+  text-decoration: none;
+  display: inline-block;
 }
 .m_video{
   width: 944px;
@@ -109,4 +118,78 @@ body{
   margin-top: 209px;
   margin-left: auto;
   margin-right: auto;
+}
+.two_content{
+  display: flex;
+  width: 1098px;
+  height: 533px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.cont1{
+  width: 320px;
+  height: 449px;
+  font-family: var(--font-family);
+}
+.cont2{
+  width: 320px;
+  height: 445px;
+  margin: 35px;
+  font-family: var(--font-family);
+}
+.cont3{
+  margin-top: auto;
+  width: 365px;
+  height: 324px;
+  font-family: var(--font-family);
+}
+
+.parent{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  color: #000;
+}
+.parent2{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 137%;
+  color: #000;
+}
+h2{
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: 38px;
+  color: #000;
+  line-height: 109%;
+}
+.three_content{
+  width: 1089px;
+  height: 530px;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sector3{
+position: relative;
+top: centre;
+}
+.cektor1{
+  position: relative;
+}
+.cektor2{
+  position: relative;
+}
+.cektor3{
+  position: relative;
+}
+svg{
+  fill: #caeac7;
+  position: absolute;
+  top: 1700px;
 }
