@@ -2,9 +2,16 @@
   --font-family: "Raleway", sans-serif;
   --second-family: "Playfair Display", sans-serif;
   --color: #000;
+  --light: #fff;
+  font-size: 62.5%;
 }
 body{
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
+  font-family: 'Arimo', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .top-menu {
@@ -112,13 +119,7 @@ body{
   text-decoration: none;
   display: inline-block;
 }
-.m_video{
-  width: 944px;
-  height: 531px;
-  margin-top: 209px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .two_content{
   display: flex;
   width: 1098px;
@@ -136,13 +137,14 @@ body{
 .cont2{
   width: 320px;
   height: 445px;
-  margin: 35px;
+  margin: 45px;
+  margin-top: auto;
   font-family: var(--font-family);
 }
 .cont3{
-  margin-top: auto;
   width: 365px;
   height: 324px;
+  margin-top: 110px;
   font-family: var(--font-family);
 }
 
@@ -166,6 +168,7 @@ h2{
   font-size: 38px;
   color: #000;
   line-height: 109%;
+  position: relative;
 }
 .three_content{
   width: 1089px;
@@ -176,20 +179,85 @@ h2{
 }
 
 .sector3{
-position: relative;
-top: centre;
+  position: relative;
+  top: centre;
 }
-.cektor1{
+
+.collector1{
+  position: relative;
+  text-align: center;
+}
+.button1{
+  width: 668px;
+  height: 110px;
+}
+.collector2{
   position: relative;
 }
-.cektor2{
-  position: relative;
-}
-.cektor3{
+.collector3{
   position: relative;
 }
 svg{
   fill: #caeac7;
   position: absolute;
-  top: 1700px;
+  top: 1745px;
+  margin-left: -100px;
+}
+.four_content{
+  width: 944px;
+  height: 211px;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.images{
+  width: 926px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.m_video{
+  max-width: 944px;
+  width: 100%;
+  margin-top: clamp(40px, 10vw, 250px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-inline: 8px;
+}
+
+.m_video__image {
+  width: 100%;
+}
+
+.m_video__text {
+  text-align: center;
+  place-self: center;
+}
+
+.m_video__link {
+  color: var(--light);
+}
+
+.title{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 137%;
+  color: var(--light); 
+}
+
+.grid_center {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.grid_element_center {
+  grid-row-start: 1;
+  grid-column-start: 1;
 }
