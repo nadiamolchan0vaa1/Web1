@@ -106,7 +106,7 @@ body {
     background: #000;
 }
 
-.green-button {
+.green-btn {
     background-color: #4BA87D;
     color: #FFFFFF;
     width: 200px;
@@ -121,6 +121,23 @@ body {
     line-height: 119%;
     letter-spacing: 0.05em;
     text-align: center;
+}
+
+.custom-input {
+    font-size: 20px;
+    width: 420px;
+    height: 65px;
+    background-color: white;
+    color: black;
+    border: 1px solid #9F9F9F;
+    border-radius: 5px; /* Задаём скругление краёв */
+    padding: 20px; /* Добавляем внутренний отступ для улучшения внешнего вида */
+    box-sizing: border-box; /* Учитываем размеры рамки в общей ширине и высоте элемента */
+}
+
+
+.join-button {
+    float: right;
 }
 
 .this-button {
@@ -201,6 +218,24 @@ h2 {
     position: relative;
 }
 
+.h2-version2  {
+    font-family: var(--second-family);
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 48px;
+    text-align: center;
+    padding: 50px;
+}
+
+.padding-zero {
+    padding: 0;
+}
+
+.learn-a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .three_content {
     width: 1089px;
     height: 530px;
@@ -220,8 +255,11 @@ h2 {
 }
 
 .button1 {
-    width: 668px;
-    height: 110px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .collector2 {
@@ -693,7 +731,7 @@ footer a {
         margin-top: 40px;
     }
 
-    .green-button {
+    .green-btn {
         scale: 0.7;
         float: none;
         height: 65px;
