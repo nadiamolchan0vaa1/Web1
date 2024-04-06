@@ -414,6 +414,7 @@ svg {
     margin-block: 134px;
     background-color: #4BA87D;
     width: 100%;
+    margin-top: 170px;
 }
 
 .images {
@@ -662,7 +663,17 @@ footer a {
         margin: 0 auto;
         display: block;
     }
-
+    .collector1 {
+        margin-top: -100px;
+    }
+    .three_content {
+        margin-top: -70px;
+    }
+    .main_div {
+        display: flex;
+        justify-content: center;
+        
+    }
     .menu-main {
         float: none;
         margin: 0 auto;
@@ -730,7 +741,14 @@ footer a {
         margin-top: 70px;
     }
 }
-
+@media (min-width: 946px) {
+    
+    .get-started {
+        height: 240px;
+        margin-top: 134px;
+        margin-bottom: -10px;
+    }
+}
 @media (max-width: 800px) {
     .div1 img {
         width: 100%;
@@ -784,10 +802,11 @@ footer a {
 
     .get-started {
         height: 240px;
+        margin-top: 300px;
     }
 
     .m_video {
-        margin-top: 170px;
+        margin-top: 200px;
     }
 
     .two_content {
@@ -826,7 +845,7 @@ footer a {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 485px) {
     * {
         box-sizing: border-box;
     }
@@ -834,6 +853,9 @@ footer a {
     .style1 {
         font-size: 47px;
         width: 100%;
+    }
+    footer{
+        text-align: center;
     }
 
     .main_div {
@@ -869,7 +891,7 @@ footer a {
     .get-started {
         height: 290px;
         margin-bottom: 0;
-        margin-top: 100px;
+        margin-top: 350px;
     }
 
     .title {
@@ -887,7 +909,9 @@ footer a {
     .deleteOnPhone {
         display: none;
     }
-
+    .m_video {
+        margin-top: 50px;
+    }
     .show {
         display: flex;
     }
@@ -898,7 +922,7 @@ footer a {
 
     .cont2,
     .cont1 {
-        box-shadow: 0 0 20px black;
+        box-shadow: 0 0 10px rgb(173, 148, 148);
     }
 
     .second-parent {
@@ -922,13 +946,16 @@ footer a {
     }
 
     .showAnotherFooter {
-        justify-content: space-between;
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
     }
+
+
 
     .showOnMob {
         display: block;
-        margin-top: 120px;
+        margin-top: 40px;
         margin-left: -30px;
     }
 

@@ -1,0 +1,46 @@
+
+html, body { height: 100%;}
+
+body > footer {
+    position: sticky;
+    top: 100vh;
+}
+
+.top-menu {
+    padding-block: 20px;
+}
+
+.menu-main {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.menu-main a {
+    padding-left: 20px;
+    font-size: 18px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 800;
+    color: #000;
+    text-decoration: underline #4BA87D;
+    text-decoration-thickness: 5px;
+}
+
+.head_wrapper {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline: 16px;
+}
+
+.bootstrapHeader {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .top-menu img {
+        margin: 0 auto;
+        display: block;
+    }
+}
