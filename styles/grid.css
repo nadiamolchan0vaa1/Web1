@@ -1,14 +1,18 @@
-html, body { height: 100%;}
+html,
+body {
+    height: 100%;
+}
 
-body > footer {
+body>footer {
     position: sticky;
     top: 100vh;
 }
 
-.main_grid{
+.main_grid {
     display: grid;
     grid-template-rows: 50px 50px;
 }
+
 body {
     margin: 40px;
 }
@@ -16,266 +20,270 @@ body {
 .wrapper {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px  ;
-    grid-template-rows: [row] auto [row] auto [row] ;
+    grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px;
+    grid-template-rows: [row] auto [row] auto [row];
     background-color: #fff;
     color: #444;
-    }
+}
 
-    .box {
+.box {
     background-color: #d6b3b3;
     color: #fff;
     border-radius: 5px;
     padding: 20px;
     font-size: 150%;
 
-    }
+}
 
-    .a {
+.a {
     grid-column: col / span 2;
-    grid-row: row ;
-    }
-    .b {
-    grid-column: col 3 / span 2 ;
-    grid-row: row ;
-    }
-    .c {
-    grid-column: col ;
-    grid-row: row 2 ;
-    }
-    .d {
-    grid-column: col 2 / span 3 ;
-    grid-row: row 2 ;
-    }
+    grid-row: row;
+}
 
-    .e {
+.b {
+    grid-column: col 3 / span 2;
+    grid-row: row;
+}
+
+.c {
+    grid-column: col;
+    grid-row: row 2;
+}
+
+.d {
+    grid-column: col 2 / span 3;
+    grid-row: row 2;
+}
+
+.e {
     grid-column: col / span 4;
     grid-row: row 3;
+}
+
+@media (max-width: 800px) {
+    .div1 img {
+        width: 100%;
     }
 
-    @media (max-width: 800px) {
-        .div1 img {
-            width: 100%;
-        }
-    
-        .bootstrapHeader {
-            display: block;
-            z-index: 1000;
-            position: relative;
-            font-size: 20px;
-        }
-    
-        .bootstrapHeader button {
-            scale: 1.5;
-            margin-right: 20px;
-        }
-    
-        .bootstrapHeader img {
-            position: relative;
-            bottom: -12px;
-        }
-    
-        header {
-            display: none;
-        }
-    
-        .navbar-nav a {
-            padding-left: 30px;
-        }
-    
-        .style_absolute {
-            scale: 1;
-            margin-left: -50px;
-            width: 100%;
-        }
-    
-        .style2 {
-            margin-top: 100px;
-        }
-    
-        .main_div {
-            height: auto;
-        }
-    
-        .title {
-            scale: 1;
-            float: none;
-            height: 65px;
-            font-size: 38px;
-        }
-    
-        .get-started {
-            height: 240px;
-        }
-    
-        .m_video {
-            margin-top: 170px;
-        }
-    
-        .two_content {
-            margin-top: 0;
-        }
-    
-        .cont1 {
-            background: white;
-            padding: 20px;
-            position: fixed;
-            left: 0;
-        }
-    
-        .cont1 img {
-            width: 100%;
-        }
-    
-        .cont2 {
-            position: fixed;
-            right: 0;
-            top: 430px;
-            background: white;
-            padding: 20px;
-        }
-    
-        .cont2 img {
-            width: 100%;
-        }
-    
-        .cont3 {
-            margin-top: 938px;
-        }
-        .second-parent{
-            gap: 20px;
-        }
+    .bootstrapHeader {
+        display: block;
+        z-index: 1000;
+        position: relative;
+        font-size: 20px;
     }
-    
-    
-    @media (max-width: 480px) {
-        * {
-            box-sizing: border-box;
-        }
-    
-        .style1 {
-            font-size: 47px;
-            width: 100%;
-        }
-    
-        .main_div {
-            margin: 10px;
-        }
-    
-        .style_div {
-            width: 100%;
-        }
-    
-        .style2 {
-            margin-top: 40px;
-        }
-    
-        .green-btn {
-            scale: 0.7;
-            float: none;
-            height: 65px;
-        }
-    
-        .this-button {
-            scale: 0.7;
-            float: none;
-            height: 65px;
-        }
-    
-        .this-button {
-            scale: 0.7;
-            float: none;
-            height: 65px;
-        }
-    
-        .get-started {
-            height: 290px;
-            margin-bottom: 0;
-            margin-top: 100px;
-        }
-    
-        .title {
-            scale: 0.7;
-            float: none;
-            height: 65px;
-        }
-    
-        .m_video__link {
-            scale: 0.7;
-            float: none;
-            height: 65px;
-        }
-    
-        .deleteOnPhone {
-            display: none;
-        }
-    
-        .show {
-            display: flex;
-        }
-    
-        .cont2 {
-            margin: 0;
-        }
-    
-        .cont2,
-        .cont1 {
-            box-shadow: 0 0 20px black;
-        }
-    
-        .second-parent {
-            width: 100%;
-        }
-    
-        .underline_links {
-            width: 100%;
-        }
-    
-        .div1 {
-            width: 50%;
-        }
-    
-        .second-parent {
-            display: none;
-        }
-    
-        footer {
-            margin-top: 0;
-        }
-    
-        .showAnotherFooter {
-            justify-content: space-between;
-            display: flex;
-        }
-    
-        .showOnMob {
-            display: block;
-            margin-top: 120px;
-            margin-left: -30px;
-        }
-    
-        .four_content {
-            height: auto;
-            margin-bottom: 200px;
-        }
-    
-        .style_absolute {
-            display: none;
-        }
-    
-        .showOnMobilePic {
-            display: block;
-            position: absolute;
-            width: 406px;
-            left: -15px;
-        }
-    
-        .main_div {
-            margin: 0;
-            padding: 10px;
-        }
-    
-        .button1 {
-            width: 100%;
-        }
+
+    .bootstrapHeader button {
+        scale: 1.5;
+        margin-right: 20px;
     }
+
+    .bootstrapHeader img {
+        position: relative;
+        bottom: -12px;
+    }
+
+    header {
+        display: none;
+    }
+
+    .navbar-nav a {
+        padding-left: 30px;
+    }
+
+    .style_absolute {
+        scale: 1;
+        margin-left: -50px;
+        width: 100%;
+    }
+
+    .style2 {
+        margin-top: 100px;
+    }
+
+    .main_div {
+        height: auto;
+    }
+
+    .title {
+        scale: 1;
+        float: none;
+        height: 65px;
+        font-size: 38px;
+    }
+
+    .get-started {
+        height: 240px;
+    }
+
+    .m_video {
+        margin-top: 170px;
+    }
+
+    .two_content {
+        margin-top: 0;
+    }
+
+    .cont1 {
+        background: white;
+        padding: 20px;
+        position: fixed;
+        left: 0;
+    }
+
+    .cont1 img {
+        width: 100%;
+    }
+
+    .cont2 {
+        position: fixed;
+        right: 0;
+        top: 430px;
+        background: white;
+        padding: 20px;
+    }
+
+    .cont2 img {
+        width: 100%;
+    }
+
+    .cont3 {
+        margin-top: 938px;
+    }
+
+    .second-parent {
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    .style1 {
+        font-size: 47px;
+        width: 100%;
+    }
+
+    .main_div {
+        margin: 10px;
+    }
+
+    .style_div {
+        width: 100%;
+    }
+
+    .style2 {
+        margin-top: 40px;
+    }
+
+    .green-btn {
+        scale: 0.7;
+        float: none;
+        height: 65px;
+    }
+
+    .this-button {
+        scale: 0.7;
+        float: none;
+        height: 65px;
+    }
+
+    .this-button {
+        scale: 0.7;
+        float: none;
+        height: 65px;
+    }
+
+    .get-started {
+        height: 290px;
+        margin-bottom: 0;
+        margin-top: 100px;
+    }
+
+    .title {
+        scale: 0.7;
+        float: none;
+        height: 65px;
+    }
+
+    .m_video__link {
+        scale: 0.7;
+        float: none;
+        height: 65px;
+    }
+
+    .deleteOnPhone {
+        display: none;
+    }
+
+    .show {
+        display: flex;
+    }
+
+    .cont2 {
+        margin: 0;
+    }
+
+    .cont2,
+    .cont1 {
+        box-shadow: 0 0 20px black;
+    }
+
+    .second-parent {
+        width: 100%;
+    }
+
+    .underline_links {
+        width: 100%;
+    }
+
+    .div1 {
+        width: 50%;
+    }
+
+    .second-parent {
+        display: none;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+
+    .showAnotherFooter {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .showOnMob {
+        display: block;
+        margin-top: 120px;
+        margin-left: -30px;
+    }
+
+    .four_content {
+        height: auto;
+        margin-bottom: 200px;
+    }
+
+    .style_absolute {
+        display: none;
+    }
+
+    .showOnMobilePic {
+        display: block;
+        position: absolute;
+        width: 406px;
+        left: -15px;
+    }
+
+    .main_div {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .button1 {
+        width: 100%;
+    }
+}

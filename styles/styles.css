@@ -6,9 +6,12 @@
     font-size: 62.5%;
 }
 
-html, body { height: 100%;}
+html,
+body {
+    height: 100%;
+}
 
-body > footer {
+body>footer {
     position: sticky;
     top: 100vh;
 }
@@ -32,73 +35,100 @@ body > footer {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-    
-    body {
-        margin: 40px;
-    }
-    .main_grid{
-        display: flex;
-        justify-content: center;
-    }
-    .wrapper {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: [col] 1fr [col] 1fr [col] 1fr [col] 1fr [col] 1fr [col] 1fr [col] 1fr;
-        grid-template-rows: [row] auto [row] auto [row] ;
-        background-color: #fff;
-        color: #444;
-        padding: 20px;
-        }
-        .scren{
-            max-width: 100px;
-            max-height: 100px;
-        }
-        .box {
-        background-color: #d6b3b3;
-        color: #fff;
-        border-radius: 5px;
-        padding: 20px;
-        font-size: 150%;
-        }
-        .side{
-            grid-column: 1;
-            grid-row: 1/4;
-        }
-        .a {
-            grid-column: 2 / 8;
-            grid-row: 1;
-        }
-        
-        .b {
-            grid-column: 2 / 4;
-            grid-row: 2;
-        }
-        
-        .c {
-            grid-column: 4 / 6;
-            grid-row: 2;
-        }
-        
-        .d {
-            grid-column: 6 / 8;
-            grid-row: 2;
-        }
-        
-        .e {
-            grid-column: 2 / 5;
-            grid-row: 3;
-        }
-        
-        .f {
-            grid-column: 5 / 8;
-            grid-row: 3;
-        }
-        .fl-col{
-            background-color: #271111;
-            display: flex;
-            flex-direction: column;
-            align-items: left;
-        }
+
+.main_grid {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: [col] 1fr [col] 1fr [col] 1fr [col] 1fr [col] 1fr [col] 1fr [col] 1fr;
+    grid-template-rows: [row] auto [row] auto [row];
+    background-color: #fff;
+    color: #444;
+    padding: 20px;
+}
+
+.scren {
+    width: 100%;
+    height: auto;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.scren-l {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+}
+
+.r_2 {
+    grid-row: 2;
+}
+
+.r_3 {
+    grid-row: 3;
+}
+
+.box {
+    background-color: #d6b3b3;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.side {
+    grid-column: 1;
+    grid-row: 1/4;
+}
+
+.a {
+    grid-column: 2 / 8;
+    grid-row: 1;
+}
+
+.b {
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+.c {
+    grid-column: 4 / 6;
+    grid-row: 2;
+}
+
+.d {
+    grid-column: 6 / 8;
+    grid-row: 2;
+}
+
+.e {
+    grid-column: 2 / 5;
+    grid-row: 3;
+}
+
+.f {
+    grid-column: 5 / 8;
+    grid-row: 3;
+}
+
+.fl-col {
+    display: grid;
+    grid-template-columns: [col] 1fr;
+    grid-template-rows: [row] 1fr [row] 1fr [row] 1fr;
+    place-items: center;
+    place-content: center;
+    background-color: #791c1c;
+}
+
+.link_before {
+    display: grid;
+    place-items: center center;
+    text-align: center;
+}
 
 
 body {
@@ -167,8 +197,8 @@ body {
 }
 
 .menu-main a {
-    padding-left: 20px;
-    font-size: 18px;
+    margin-left: 20px;
+    font-size: 1.7rem;
     font-family: 'Arimo', sans-serif;
     font-weight: 800;
     color: #000;
@@ -198,7 +228,7 @@ body {
 
 .style1 {
     font-weight: 900;
-    font-size: 59px;
+    font-size: 5.9rem;
     line-height: 120%;
     color: #000;
     margin: 0;
@@ -209,7 +239,7 @@ body {
 .style2 {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 19px;
+    font-size: 1.9rem;
     line-height: 137%;
     color: var(--color);
 
@@ -280,8 +310,11 @@ body {
 }
 
 .button_style {
+    width: 100%;
+    height: 100%;
     color: #4ba87d;
     text-decoration: none;
+    text-align: center;
     display: inline-block;
 }
 
@@ -318,7 +351,7 @@ body {
 .parent {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 162%;
     color: #000;
 }
@@ -334,7 +367,7 @@ body {
 h2 {
     font-family: var(--second-family);
     font-weight: 900;
-    font-size: 38px;
+    font-size: 3.4rem;
     color: #000;
     line-height: 109%;
     position: relative;
@@ -503,6 +536,14 @@ svg {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+}
+
+footer .underline_links a {
+    font-size: 1.5rem;
+}
+
+footer div a {
+    font-size: 1.9rem;
 }
 
 .div1 {
@@ -803,17 +844,21 @@ footer a:not(.not-style):focus {
         margin: 0 auto;
         display: block;
     }
+
     .collector1 {
         margin-top: -100px;
     }
+
     .three_content {
         margin-top: -70px;
     }
+
     .main_div {
         display: flex;
         justify-content: center;
-        
+
     }
+
     .menu-main {
         float: none;
         margin: 0 auto;
@@ -881,14 +926,22 @@ footer a:not(.not-style):focus {
         margin-top: 70px;
     }
 }
+
 @media (min-width: 946px) {
-    
+
     .get-started {
         height: 240px;
         margin-top: 134px;
         margin-bottom: -10px;
     }
 }
+
+@media (max-width: 946px) {
+    .underline_links a {
+        margin-right: 50px;
+    }
+}
+
 @media (max-width: 800px) {
     .div1 img {
         width: 100%;
@@ -979,8 +1032,22 @@ footer a:not(.not-style):focus {
     .cont3 {
         margin-top: 938px;
     }
-    .second-parent{
+
+    .second-parent {
         gap: 20px;
+    }
+
+    .underline_links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .underline_links a {
+        margin-top: 0;
+    }
+
+    .underline_links a:first-child {
+        margin-top: 20px;
     }
 }
 
@@ -991,10 +1058,11 @@ footer a:not(.not-style):focus {
     }
 
     .style1 {
-        font-size: 47px;
+        font-size: 40px;
         width: 100%;
     }
-    footer{
+
+    footer {
         text-align: center;
     }
 
@@ -1049,9 +1117,11 @@ footer a:not(.not-style):focus {
     .deleteOnPhone {
         display: none;
     }
+
     .m_video {
         margin-top: 50px;
     }
+
     .show {
         display: flex;
     }
@@ -1088,7 +1158,7 @@ footer a:not(.not-style):focus {
     .showAnotherFooter {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
+
     }
 
 
